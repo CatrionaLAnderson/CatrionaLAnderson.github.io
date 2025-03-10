@@ -39,6 +39,8 @@ header h1 {
 header p {
     margin-top: 10px;
     font-size: 1.2em;
+    color: white !important;
+    opacity: 1 !important; 
 }
 
 /* Navigation */
@@ -134,6 +136,12 @@ footer {
     margin-top: 40px;
     border-radius: 8px;
     font-size: 1em;
+}
+
+/* Fix footer paragraph text */
+footer p {
+    color: white !important;
+    opacity: 1 !important;
 }
 
 /* Footer Links */
