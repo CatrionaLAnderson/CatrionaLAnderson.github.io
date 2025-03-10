@@ -3,12 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weCare - Software Engineering Project</title>
+    <title>WeCare - Software Engineering Project</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+        .wecare-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px; 
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #f39c12;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 40px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #444;
+            max-width: 750px; 
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: #f39c12;
+            position: absolute;
+            left: 0;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        iframe {
+            border-radius: 8px;
+            width: 100%;
+            height: 450px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            background: #2C3E50;
+            color: white;
+            border-radius: 8px;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="wecare-container">
         <!-- HEADER -->
         <header>
             <h1>WeCare Well-Being App</h1>
@@ -29,8 +123,10 @@
                 and physical health. The app provides features such as mental health support, fitness tracking, notifications, and 
                 contact with ambassadors, ensuring employees have the resources they need for a balanced work-life experience.
             </p>
+        </section>
 
-            <h3>Key Features</h3>
+        <section>
+            <h2>Key Features</h2>
             <ul>
                 <li><strong>User Authentication:</strong> Secure login & registration system</li>
                 <li><strong>Profile Management:</strong> Allows users and admins to edit personal details</li>
@@ -40,9 +136,10 @@
                 <li><strong>Admin Panel:</strong> Enables admins to manage users and content</li>
                 <li><strong>Ambassador Contact:</strong> Enables direct communication with FDM ambassadors</li>
             </ul>
+        </section>
 
-
-            <h3>My Role</h3>
+        <section>
+            <h2>My Role</h2>
             <ul>
                 <li><strong>Front-End Development:</strong> Built the user interface using React Native & React Native Paper</li>
                 <li><strong>Diet and Fitness tracking:</strong> Implemented the diet and fitness tracking feature</li>
@@ -50,25 +147,33 @@
                 <li><strong>Managed group members:</strong> Managed the group members and assigned tasks</li>
                 <li><strong>UX/UI Design:</strong> Focused on creating an intuitive and user-friendly experience</li>
             </ul>
+        </section>
 
-            <h3>Tools & Technologies Used</h3>
+        <section>
+            <h2>Tools & Technologies Used</h2>
             <ul>
                 <li>Front-End: JavaScript, React Native, Expo go</li>
                 <li>Backend: Node.js, Supabase</li>
                 <li>Figma</li>
                 <li>Agile Methodology</li>
             </ul>
+        </section>
 
-            <h3>Project Screenshots</h3>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/1fYf9Fzukdc3KnNQHxRgrz/Untitled?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+        <section>
+            <h2>Project Screenshots</h2>
+            <iframe src="https://embed.figma.com/design/1fYf9Fzukdc3KnNQHxRgrz/Untitled?node-id=0-1&embed-host=share" allowfullscreen></iframe>
             <p>Above: A glimpse of the high-fidelity prototype in Figma.</p>
+        </section>
 
-            <h3>What I Learned</h3>
+        <section>
+            <h2>What I Learned</h2>
             <p>
                 This project strengthened my ability to develop full-stack applications, implement acceptance testing, and work within an Agile development environment. I also gained valuable team leadership and collaboration skills while managing different project phases.
             </p>
+        </section>
 
-            <h3>Source Code</h3>
+        <section>
+            <h2>Source Code</h2>
             <p>
                 <a href="https://github.com/Ishita-131/WeCare-c2c5716c47b11a685231c3f8109509f3d7f762e9.git" target="_blank" class="button">View on GitHub</a>
             </p>
@@ -82,4 +187,3 @@
 
 </body>
 </html>
-
