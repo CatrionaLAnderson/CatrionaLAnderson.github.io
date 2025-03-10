@@ -3,42 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aware Phone Interface | UX Case Study</title>
-    <link rel="stylesheet" href="https://catrionalanderson.github.io/css/style.css">
+    <title>Hybrid Learning UX Research</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .ux-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #f39c12;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        ul li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        ul li::before {
+            content: "✔";
+            color: #f39c12;
+            position: absolute;
+            left: 0;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            background: #2980B9;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+        .button:hover {
+            background: #f39c12;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Aware Phone Interface</h1>
-        <p>UX Research for Digital Wellbeing</p>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../projects.html">Projects</a>
-            <a href="../about.html">About Me</a>
-            <a href="../cv.html">CV</a>
-        </nav>
-    </header>
+    <div class="ux-container">
+        <header>
+            <h1>Hybrid Learning UX Research & Design</h1>
+            <p>User Experience Coursework | Queen Mary University of London</p>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../about.html">About Me</a>
+            </nav>
+        </header>
+        
+        <section>
+            <h2>Overview</h2>
+            <p>Hybrid university lectures often create an engagement gap between in-person and online students. This UX research project explored how lecturer interactions and technology impact student inclusion in hybrid learning environments.</p>
+        </section>
 
-    <section>
-        <h2>Overview</h2>
-        <p>This project explores how phone interfaces can encourage better digital habits through UX design.</p>
+        <section>
+            <h2>My Role & Skills Gained</h2>
+            <ul>
+                <li>Conducted ethnographic research across 8 hybrid lectures.</li>
+                <li>Performed student interviews & observations to analyze engagement barriers.</li>
+                <li>Applied thematic analysis to identify UX challenges.</li>
+                <li>Designed a Hybrid Presence Robot to improve online student participation.</li>
+            </ul>
+            <h3>Skills Gained:</h3>
+            <ul>
+                <li>UX Research & Ethnographic Methods</li>
+                <li>Data Analysis & Thematic Coding</li>
+                <li>UX Design Thinking & Problem Solving</li>
+                <li>Concept Design</li>
+            </ul>
+        </section>
 
-        <h3>Problem Statement</h3>
-        <p>Users struggle with phone distractions and want more mindful interaction.</p>
+        <section>
+            <h2>Key UX Findings & Solutions</h2>
+            <ul>
+                <li>Online students experience passive learning & limited engagement.</li>
+                <li>Lecturers unconsciously prioritize in-person students.</li>
+                <li>Hybrid lecture tools like Echo360 lack real-time interaction.</li>
+            </ul>
+            <h3>Proposed Solution:</h3>
+            <p>Designed a Hybrid Presence Robot that:</p>
+            <ul>
+                <li>Projects online students into the physical lecture space.</li>
+                <li>Uses audio, LED indicators & movement tracking to create presence.</li>
+                <li>Mimics in-person engagement, ensuring equal participation.</li>
+            </ul>
+        </section>
 
-        <h3>Research & Data Collection</h3>
-        <ul>
-            <li>User Interviews & Surveys</li>
-            <li>Usability Testing</li>
-            <li>Secondary Research on Digital Wellbeing</li>
-        </ul>
+        <section>
+            <h2>Lessons Learned</h2>
+            <p>This project deepened my understanding of UX research methods and how technology & behavior impact user engagement. I learned how to conduct qualitative research, analyze user pain points, and propose UX-driven solutions for real-world challenges.</p>
+        </section>
 
-        <h3>Final Design</h3>
-        <img src="../assets/aware-phone-mockup.png" alt="Aware Phone Interface Design" width="400px">
-        <p>The final design includes focus modes, notification filtering, and ambient UX cues.</p>
-    </section>
+        <section>
+            <h2>Tools & Technologies Used</h2>
+            <ul>
+                <li>UX Research – Ethnographic study, observations, interviews.</li>
+                <li>Data Analysis – Thematic analysis (Braun & Clarke, 2006).</li>
+                <li>UX Design – Solution ideation, user-centered design thinking.</li>
+                <li>Figma – Mockups & concept visualization.</li>
+            </ul>
+        </section>
 
-    <footer>
-        <p>Check out my <a href="https://github.com/yourusername">GitHub</a> for more projects.</p>
-    </footer>
+        <section>
+            <h2>Research Study PDF</h2>
+            <iframe src="docs/UXResearchStudy.pdf" width="100%" height="600px"></iframe>
+        </section>
+    </div>
 </body>
 </html>
