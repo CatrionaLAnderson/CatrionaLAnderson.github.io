@@ -39,7 +39,7 @@ header h1 {
 header p {
     margin-top: 10px;
     font-size: 1.2em;
-    color: white !important;
+    color: #f39c12 !important;
     opacity: 1 !important; 
 }
 
@@ -140,7 +140,7 @@ footer {
 
 /* Fix footer paragraph text */
 footer p {
-    color: white !important;
+    color: #f39c12 !important;
     opacity: 1 !important;
 }
 
