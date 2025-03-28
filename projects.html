@@ -15,8 +15,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">CV</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="docs/catriona-anderson-cv.pdf">CV</a></li>
                 </ul>
             </div>
             <h1 class="page-title">My Projects</h1>
@@ -30,19 +30,19 @@
             <div class="project-card">
                 <h2><em>WeCare : Well-being app</em></h2>
                 <p>A well-being app designed for FDMgroup to improve employee health and work-life balance.</p>
-                <button>View Project</button>
+                <a href="projects/wecare.html" class="project-button">View Project</a>
             </div>
 
             <div class="project-card">
                 <h2><em>Hybrid Learning UX Research</em></h2>
                 <p>User Experience Ethnographic Research study, Design proposal and AI analysis.</p>
-                <button>View Project</button>
+                <a href="projects/uxresearch.html" class="project-button">View Project</a>
             </div>
 
             <div class="project-card">
-                <h2><em>Aware Phone Interface</em></h2>
+                <h2><em>Aware Phone Interface - Ongoing</em></h2>
                 <p>Final Year Project: Drunk aware phone interface system to create a safer user experience for drunk users.</p>
-                <button>View Project</button>
+                <a href="projects/aware-phone.html" class="project-button">View Project</a>
             </div>
         </section>
     </main>
@@ -98,8 +98,8 @@
         }
 
         /* Ensure buttons are always at the bottom */
-        .project-card button {
-            align-self: flex-start; /* Ensures buttons align properly */
+        .project-button {
+            align-self: flex-start;
             background-color: #FFDEDE;
             border: none;
             padding: 8px 12px;
@@ -107,9 +107,11 @@
             cursor: pointer;
             border-radius: 5px;
             font-size: 15px;
+            text-decoration: none;
+            color: black;
         }
 
-        .project-card button:hover {
+        .project-button:hover {
             background-color: #FFC0C0;
         }
 

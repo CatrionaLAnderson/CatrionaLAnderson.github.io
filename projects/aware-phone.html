@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aware Phone Interface - Final Year Project</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFDEA;
+            margin: 0;
+            padding: 0;
+        }
+
+        .aware-container {
+            max-width: 100%;
+            margin: 0;
+            padding: 40px;
+            background-color: #FFFDEA;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffe7c6;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #E0E0E0;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p, ul li {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        strong {
+            color: #C60000;
+        }
+
+        iframe {
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 100%;
+            height: 450px;
+        }
+
+        a.button {
+            display: inline-block;
+            background-color: #C60000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        a.button:hover {
+            background-color: #900000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../projects.html">Projects</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                    <li><a href="../docs/catriona-anderson-cv.pdf">CV</a></li>
+                </ul>
+            </div>
+            <h1 class="page-title">Aware Phone Interface - Ongoing</h1>
+        </nav>
+    </header>
+
+    <!-- Project Details -->
+    <main class="aware-container">
+        <section>
+            <h2>Overview</h2>
+            <p>
+                Aware Phone Interface is my Final Year Project designed to enhance user safety and experience when under the influence of alcohol. 
+                This project implements innovative interface called "drunk mode", similar to "Do Not Distrub", but this is activated when the user intoxicated.
+                It allows users to set up their prefrences to control their experince and safety when using their phone while drunk. 
+                The interface is not only designed to prevent errors but also to reduce cognitive offload for the user based of research and user testing.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Drunk Mode:</strong>Activated by the user - for now at least</li>
+                <li><strong>Typos and Text Correction:</strong> Algorithm detects and suggests corrections for drunken texting.</li>
+                <li><strong>UI efficiency</strong>The UI of the "home screen" is optimised (bigger apps, easy to access emergency buttons etc) to reduce cognitive load for the intoxicated user.</li>
+                <li><strong>Health recommendations</strong> Provides alcohol consumption recommendations based off users BMI, and has a calculator for users BAC percentage</li>
+                <li><strong>MUCH MORE!</strong> Above are just some of the many features of this interface</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li><strong>Frontend:</strong> React Native, Expo</li>
+                <li><strong>Backend:</strong> Node.js, Supabase</li>
+                <li><strong>Language:</strong> JavaScript</li>
+                <li><strong>Design:</strong> Figma</li>
+                <li><strong>Methodology:</strong> Agile Development</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Interim Report</h2>
+                <iframe src="../docs/interim-report.pdf"></iframe>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Ongoing Project</h2>
+            <p>
+                Working on this year-long project has been challenging but really rewarding. It’s been great having full control and managing my own deadlines to keep on track with my roadmap. One of the highlights has definitely been the user research phase, especially seeing through the survey what people actually want from the system. It made me realize how much I enjoy UX research, and it’s something I’d love to take further after this project.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Source Code</h2>
+            <p>
+                <a href="https://github.com/CatrionaLAnderson/AwarePhoneInterface" target="_blank" class="button">View on GitHub</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Find me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
+        <a href="mailto:catrionaanderson@outlook.com">Email</a></p>
+    </footer>
+
+</body>
+</html>
