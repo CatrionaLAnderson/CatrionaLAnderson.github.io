@@ -3,55 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Catriona Anderson</title>
-    <link rel="stylesheet" href="https://catrionalanderson.github.io/css/style.css">
+    <title>Projects - Catriona Anderson</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Global Styles -->
 </head>
 <body>
 
-    <div class="container">
-        <!-- HEADER -->
-        <header>
-            <h1>My Projects</h1>
-            <p>Explore my work in UX Research, HCI, and Tech Development</p>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About Me</a>
-                <a href="cv.html">CV</a>
-            </nav>
-        </header>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">CV</a></li>
+                </ul>
+            </div>
+            <h1 class="page-title">My Projects</h1>
+        </nav>
+    </header>
 
-        <!-- PROJECTS LIST -->
-        <section>
-            <h2>Project Highlights</h2>
-            <p>Here are some of the projects I’ve worked on, focusing on UX, HCI, and innovative tech solutions.</p>
+    <!-- Projects Section -->
+    <main class="projects-container">
 
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>weCare - Well-being App</h3>
-                    <p>A well-being app designed for FDMgroup to improve employee health and work-life balance.</p>
-                    <a href="projects/wecare.html" class="button">View Project</a>
-                </div>
+        <section class="projects">
+            <div class="project-card">
+                <h2><em>WeCare : Well-being app</em></h2>
+                <p>A well-being app designed for FDMgroup to improve employee health and work-life balance.</p>
+                <button>View Project</button>
+            </div>
 
-                <div class="project-card">
-                    <h3>Hybrid Learning UX Research</h3>
-                    <p>User Experience Ethnographic Research study, Design proposal and AI analysis</p>
-                    <a href="projects/uxresearch.html" class="button">View Project</a>
-                </div>
+            <div class="project-card">
+                <h2><em>Hybrid Learning UX Research</em></h2>
+                <p>User Experience Ethnographic Research study, Design proposal and AI analysis.</p>
+                <button>View Project</button>
+            </div>
 
-                <div class="project-card">
-                    <h3>Drunk Mode UI - Ethical Digital Safety</h3>
-                    <p>A user-friendly smartphone mode to enhance digital well-being while intoxicated.</p>
-                    <a href="projects/project3.html" class="button">View Project</a>
-                </div>
+            <div class="project-card">
+                <h2><em>Aware Phone Interface</em></h2>
+                <p>Final Year Project: Drunk aware phone interface system to create a safer user experience for drunk users.</p>
+                <button>View Project</button>
             </div>
         </section>
+    </main>
 
-        <!-- FOOTER -->
-        <footer>
-            <p>Find me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | <a href="mailto:your.email@example.com">Email</a></p>
-        </footer>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Find me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
+        <a href="mailto:catrionaanderson@outlook.com">Email</a></p>
+    </footer>
+
+    <!-- Page-Specific Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFDEA;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-title {
+            text-align: right;
+            color: #C60000;
+            font-size: 30px;
+            font-weight: bold;
+            margin-right: 40px;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        .projects-container {
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            flex-wrap: wrap;
+            margin-top: 140px;
+        }
+
+        /* Ensure all project cards have the same height */
+        .project-card {
+            background-color: #FFD9A5;
+            padding: 20px;
+            width: 260px;
+            border-radius: 2px;
+            text-align: left;
+            display: flex; /* Enables flexbox */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between; /* Evenly distribute content */
+            height: 300px;
+        }
+
+        /* Ensure buttons are always at the bottom */
+        .project-card button {
+            align-self: flex-start; /* Ensures buttons align properly */
+            background-color: #FFDEDE;
+            border: none;
+            padding: 8px 12px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .project-card button:hover {
+            background-color: #FFC0C0;
+        }
+
+        .project-card h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-style: italic;
+            margin-top: -10px;
+        }
+
+    </style>
 
 </body>
 </html>
