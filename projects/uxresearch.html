@@ -146,19 +146,88 @@
             line-height: 1.6;
             margin-bottom: 16px;
         }
+
+        .hamburger {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+            padding: 10px 20px;
+            color: #C60000;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                z-index: 10;
+            }
+
+            header {
+                position: relative;
+                padding: 0;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-menu {
+                display: none;
+                text-align: center;
+                background-color: #FFFDEA;
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            .nav-menu.show {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                padding: 0;
+                margin: 0;
+            }
+
+            body{
+                padding: 30px; /* Adjust for fixed header */
+            }
+
+            nav ul li {
+                display: block;
+            }
+
+            .page-title {
+                font-size: 22px;
+                text-align: center;
+                white-space: normal;
+                margin: 6px 0 10px;
+            }
+
+            .ux-container {
+                padding: 40px 15px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     
     <header>
         <nav>
             <div class="nav-left">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../projects.html">Projects</a></li>
-                    <li><a href="../about.html">About Me</a></li>
-                    <li><a href="../docs/catriona-anderson-cv.pdf">CV</a></li>
-                </ul>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                        <li><a href="../about.html">About Me</a></li>
+                        <li><a href="../docs/catriona-anderson-cv.pdf">CV</a></li>
+                    </ul>
+                </div>
             </div>
             <h1 class="page-title">Hybrid Learning UX Research Project</h1>
         </nav>
@@ -231,6 +300,13 @@
         <p>Find me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
         <a href="mailto:catrionalanderson@outlook.com">Email</a></p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('show');
+        }
+    </script>
   
 </body>
 </html>
