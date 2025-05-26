@@ -11,48 +11,56 @@
             background-color: #FFFDEA;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         .wecare-container {
-            max-width: 100%;
-            margin: 0;
-            padding: 40px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 20px;
             background-color: #FFFDEA;
         }
 
         section {
-            margin: 40px 0;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #ffe7c6;
+            margin: 60px 0;
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
         }
 
         hr {
             border: none;
-            border-top: 1px solid #E0E0E0;
-            margin: 20px 0;
+            border-top: 1px solid #eee;
+            margin: 40px 0;
         }
-
+        h1 {
+            text-align: right;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
         h2 {
-            font-size: 1.2em;
-            color: #333;
+            font-size: 1.6em;
+            color: #C60000;
             margin-bottom: 10px;
+            margin-top: 0;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.2px;
+            border-bottom: 2px solid #F5CBA7;
+            padding-bottom: 6px;
         }
 
         p, ul li {
-            font-size: 0.9em;
-            color: #555;
-            line-height: 1.6;
+            font-size: 1em;
+            color: #333;
         }
 
         ul {
             padding-left: 20px;
+            margin-top: 10px;
         }
 
         ul li {
-            margin: 8px 0;
+            margin-bottom: 12px;
         }
 
         strong {
@@ -63,7 +71,21 @@
             border-radius: 8px;
             margin-top: 20px;
             width: 100%;
-            height: 450px;
+            height: 500px;
+            border: 1px solid #ddd;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
         }
 
     </style>
@@ -97,59 +119,66 @@
 
             <hr>
 
-            <section class="features-section">
-                <h2>Key Features</h2>
-                <ul>
-                    <li><strong>User Authentication:</strong> Secure login & registration system</li>
-                    <li><strong>Profile Management:</strong> Allows users and admins to edit personal details</li>
-                    <li><strong>Notification System:</strong> Sends reminders and updates to users</li>
-                    <li><strong>Mental Health Support:</strong> Provides resources and assistance for mental health support</li>
-                    <li><strong>Fitness Tracking:</strong> Allows users to track their fitness progress</li>
-                    <li><strong>Admin Panel:</strong> Enables admins to manage users and content</li>
-                    <li><strong>Ambassador Contact:</strong> Enables direct communication with FDM ambassadors</li>
-                </ul>
-            </section>
+            <div class="grid-2">
+                <section class="features-section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li><strong>User Authentication:</strong> Secure login & registration system</li>
+                        <li><strong>Profile Management:</strong> Allows users and admins to edit personal details</li>
+                        <li><strong>Notification System:</strong> Sends reminders and updates to users</li>
+                        <li><strong>Mental Health Support:</strong> Provides resources and assistance for mental health support</li>
+                        <li><strong>Fitness Tracking:</strong> Allows users to track their fitness progress</li>
+                        <li><strong>Admin Panel:</strong> Enables admins to manage users and content</li>
+                        <li><strong>Ambassador Contact:</strong> Enables direct communication with FDM ambassadors</li>
+                    </ul>
+                </section>
+
+                <section class="learning-section">
+                    <h2>What I Learned</h2>
+                    <p>
+                        This project strengthened my ability to develop full-stack applications, implement acceptance testing, and work within an Agile development environment. I also gained valuable team leadership and collaboration skills while managing different project phases.
+                    </p>
+                </section>
+            </div>
 
             <hr>
 
-            <section class="role-section">
-                <h2>My Role</h2>
-                <ul>
-                    <li><strong>Front-End Development:</strong> Built the user interface using React Native & React Native Paper</li>
-                    <li><strong>Diet and Fitness tracking:</strong> Implemented the diet and fitness tracking feature</li>
-                    <li><strong>Ensured consistency of entire app:</strong> Maintained consistent design and functionality throughout the application</li>
-                    <li><strong>Managed group members:</strong> Coordinated tasks and managed the group members effectively</li>
-                    <li><strong>UX/UI Design:</strong> Focused on creating an intuitive and user-friendly experience</li>
-                </ul>
-            </section>
+            <div class="grid-2">
+                <section class="role-section">
+                    <h2>My Role</h2>
+                    <ul>
+                        <li><strong>Front-End Development:</strong> Built the user interface using React Native & React Native Paper</li>
+                        <li><strong>Diet and Fitness tracking:</strong> Implemented the diet and fitness tracking feature</li>
+                        <li><strong>Ensured consistency of entire app:</strong> Maintained consistent design and functionality throughout the application</li>
+                        <li><strong>Managed group members:</strong> Coordinated tasks and managed the group members effectively</li>
+                        <li><strong>UX/UI Design:</strong> Focused on creating an intuitive and user-friendly experience</li>
+                    </ul>
+                </section>
 
-            <hr>
-
-            <section class="tools-section">
-                <h2>Tools & Technologies Used</h2>
-                <ul>
-                    <li><strong>Front-End:</strong> JavaScript, React Native, Expo Go</li>
-                    <li><strong>Backend:</strong> Node.js, Supabase</li>
-                    <li><strong>Design:</strong> Figma</li>
-                    <li><strong>Methodology:</strong> Agile</li>
-                </ul>
-            </section>
+                <section class="tools-section">
+                    <h2>Tools & Technologies Used</h2>
+                    <ul>
+                        <li><strong>Front-End:</strong> JavaScript, React Native, Expo Go</li>
+                        <li><strong>Backend:</strong> Node.js, Supabase</li>
+                        <li><strong>Design:</strong> Figma</li>
+                        <li><strong>Methodology:</strong> Agile</li>
+                    </ul>
+                </section>
+            </div>
 
             <hr>
 
             <section class="screenshots-section">
                 <h2>Project Screenshots</h2>
-                <iframe src="../docs/ux-research.pdf"></iframe>
+               <section class="screenshots-section">
+                <iframe
+                    style="border: 1px solid #ddd; border-radius: 8px;"
+                    width="100%"
+                    height="500"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1fYf9Fzukdc3KnNQHxRgrz%2FWeCare%3Ft%3DTRN3kto89xF6kWw8-1"
+                    allowfullscreen>
+                </iframe>
                 <p>Above: A glimpse of the high-fidelity prototype in Figma.</p>
-            </section>
-
-            <hr>
-
-            <section class="learning-section">
-                <h2>What I Learned</h2>
-                <p>
-                    This project strengthened my ability to develop full-stack applications, implement acceptance testing, and work within an Agile development environment. I also gained valuable team leadership and collaboration skills while managing different project phases.
-                </p>
             </section>
 
             <hr>

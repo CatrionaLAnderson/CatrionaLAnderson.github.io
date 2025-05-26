@@ -11,48 +11,52 @@
             background-color: #FFFDEA;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
 
         .aware-container {
-            max-width: 100%;
-            margin: 0;
-            padding: 40px;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 20px;
             background-color: #FFFDEA;
         }
 
         section {
-            margin: 40px 0;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #ffe7c6;
+            margin: 60px 0;
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
         }
 
         hr {
             border: none;
-            border-top: 1px solid #E0E0E0;
-            margin: 20px 0;
+            border-top: 1px solid #eee;
+            margin: 40px 0;
         }
 
         h2 {
-            font-size: 1.2em;
-            color: #333;
+            font-size: 1.6em;
+            color: #C60000;
             margin-bottom: 10px;
+            margin-top: 0;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.2px;
+            border-bottom: 2px solid #F5CBA7;
+            padding-bottom: 6px;
         }
 
         p, ul li {
-            font-size: 0.9em;
-            color: #555;
-            line-height: 1.6;
+            font-size: 1em;
+            color: #333;
         }
 
         ul {
             padding-left: 20px;
+            margin-top: 10px;
         }
 
         ul li {
-            margin: 8px 0;
+            margin-bottom: 12px;
         }
 
         strong {
@@ -63,7 +67,8 @@
             border-radius: 8px;
             margin-top: 20px;
             width: 100%;
-            height: 450px;
+            height: 500px;
+            border: 1px solid #ddd;
         }
 
         a.button {
@@ -79,6 +84,17 @@
 
         a.button:hover {
             background-color: #900000;
+        }
+        h1 {
+            text-align: right;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 60px;
+            align-items: start;
         }
     </style>
 </head>
@@ -104,10 +120,7 @@
         <section>
             <h2>Overview</h2>
             <p>
-                Aware Phone Interface is my Final Year Project designed to enhance user safety and experience when under the influence of alcohol. 
-                This project implements innovative interface called "drunk mode", similar to "Do Not Distrub", but this is activated when the user intoxicated.
-                It allows users to set up their prefrences to control their experince and safety when using their phone while drunk. 
-                The interface is not only designed to prevent errors but also to reduce cognitive offload for the user based of research and user testing.
+                Aware Phone Interface was my Final Year Project, completed in May 2025, designed to enhance user safety and experience when under the influence of alcohol. The system introduces a feature called "Drunk Mode"—similar in concept to "Do Not Disturb"—which activates when the user is intoxicated. It allows users to preconfigure safety preferences that guide their phone interactions while drunk. The interface aims to reduce cognitive load, prevent errors, and support safer phone use through a combination of real-time detection, UI changes, and health tools informed by UX research and user testing.
             </p>
         </section>
 
@@ -116,11 +129,11 @@
         <section>
             <h2>Key Features</h2>
             <ul>
-                <li><strong>Drunk Mode:</strong>Activated by the user - for now at least</li>
-                <li><strong>Typos and Text Correction:</strong> Algorithm detects and suggests corrections for drunken texting.</li>
-                <li><strong>UI efficiency</strong>The UI of the "home screen" is optimised (bigger apps, easy to access emergency buttons etc) to reduce cognitive load for the intoxicated user.</li>
-                <li><strong>Health recommendations</strong> Provides alcohol consumption recommendations based off users BMI, and has a calculator for users BAC percentage</li>
-                <li><strong>MUCH MORE!</strong> Above are just some of the many features of this interface</li>
+                <li><strong>Drunk Mode Activation:</strong> Users can toggle Drunk Mode manually, which locks in safety settings and adapts the phone UI.</li>
+                <li><strong>Real-Time Typo Detection:</strong> An algorithm detects and flags potentially incoherent messages, suggesting corrections.</li>
+                <li><strong>Accessible UI Layout:</strong> Simplified home screen with enlarged buttons and quick access to emergency features.</li>
+                <li><strong>Health Support:</strong> BAC estimator and alcohol intake recommendations based on user BMI.</li>
+                <li><strong>Custom Alerts:</strong> Users can configure custom notifications (e.g. “Don’t text your ex”) to trigger during Drunk Mode.</li>
             </ul>
         </section>
 
@@ -140,16 +153,16 @@
         <hr>
 
         <section>
-            <h2>Interim Report</h2>
-                <iframe src="../docs/interim-report.pdf"></iframe>
+            <h2>Final Report</h2>
+                <iframe src="../docs/final-report.pdf"></iframe>
         </section>
 
         <hr>
 
         <section>
-            <h2>Ongoing Project</h2>
+            <h2>Final Reflections</h2>
             <p>
-                Working on this year-long project has been challenging but really rewarding. It’s been great having full control and managing my own deadlines to keep on track with my roadmap. One of the highlights has definitely been the user research phase, especially seeing through the survey what people actually want from the system. It made me realize how much I enjoy UX research, and it’s something I’d love to take further after this project.
+                Completing this year-long solo project was both challenging and rewarding. I developed the interface from the ground up—from UX research and prototyping to full-stack development and testing. One of the most valuable aspects was the user research phase, where survey feedback shaped key design decisions. This project deepened my interest in affective computing and UX design, and confirmed my passion for building technology that responds to real human needs.
             </p>
         </section>
 
